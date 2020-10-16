@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <title>AFRIMER|SIGN UP</title>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <style>
+      html, body {
+      display: flex;
+      justify-content: center;
+      font-family:'Karla',sans-serif;
+      font-size: 15px;
+      height: 100%;
+      background-color:rgba( 40, 56, 8,.8);
+      background: url("https://images.unsplash.com/photo-1553546895-531931aa1aa8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80") no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      }
+      form {
+      background: rgba( 40, 56, 8,.8);
+      width: 70%;
+      border-radius: 15px;
+      font-family: 'Karla', sans-serif;
+      font-weight: 300;
+      }
+      input[type=text], input[type=password] {
+      width: 100%;
+      padding: 16px 8px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      }
+      .icon {
+      font-size: 110px;
+      display: flex;
+      justify-content: center;
+      color: white;
+      }
+      button {
+      background-color: white;
+      color: rgb(40, 56, 8);
+      padding: 14px 0;
+      margin: 10px 0;
+      border: none;
+      cursor: grab;
+      width: 48%;
+      font-family:'Karla', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      }
+      h1 {
+      text-align:center;
+      font-size:18;
+      color: white;
+      }
+      button:hover {
+      opacity: 0.8;
+      }
+      .formcontainer {
+      text-align: center;
+      margin: 24px 50px 12px;
+      border-radius: 20px;
+      }
+      .container {
+      text-align:left;
+      color: white;
+      font-family: 'Karla', sans-serif;;
+      font-size: larger;
+      font-weight: lighter;
+      }
+      
+      span.psw {
+      float: right;
+      padding-top: 0;
+      padding-right: 15px;
+      color: white;
+      }
+      a{
+        text-decoration: none;
+        color:white;
+      /* Change styles for span on extra small screens */
+      @media screen and (max-width: 300px) {
+      span.psw {
+      display: block;
+      float: none;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/action_page.php">
+      <h1>AFRIMER SIGN UP</h1>
+      <div class="icon">
+        <i class="fas fa-user-circle"></i>
+      </div>
+      <div class="formcontainer">
+      <div class="container">
+        <label for="uname">Username</label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="mail">E-mail</label>
+        <input type="text" placeholder="Enter E-mail" name="mail" required>
+        <label for="psw">Password</label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+      <button type="submit">SIGN UP</button>
+      <div class="container" style="background-color:rgba( 40, 56, 8,.2">
+        <label style="padding-left: 15px">
+        <input type="checkbox"  checked="checked" name="remember"> Remember me
+        </label>
+        <span class="psw"><a href="#">Forgot password?</a></span>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>
